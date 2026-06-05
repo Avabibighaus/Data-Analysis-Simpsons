@@ -1,29 +1,141 @@
-{
-  "name": "finalgroupproject",
-  "private": true,
-  "version": "1.0.0",
-  "main": "index.html",
-  "scripts": {
-    "setup": "tsc -w -p tsconfig.json",
-    "start": "vite"
-  },
-  "dependencies": {
-    "csv-parse": "^6.1.0",
-    "node-fetch": "^3.2.10",
-    "typescript": "^5.4.5",
-    "vega": "^6.2.0",
-    "vega-embed": "^7.1.0",
-    "vega-lite": "^6.4.1",
-    "vite": "^7.2.2"
-  },
-  "author": "Nathan Kennedy",
-  "email": "nkennedy631@gmail.com",
-  "maintainers": [
-    "Ayaan Kazerouni"
-  ],
-  "maintainer email": "ayaank@calpoly.edu",
-  "devDependencies": {
-    "@types/node": "^24.10.1",
-    "@types/vega": "^0.0.30"
-  }
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: Century;
+}
+
+header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/736x/8a/8f/37/8a8f37a1a17cb214fb94ce2f7d2c1191.jpg);
+  height: 70vh;
+  background-size: cover;
+  background-position: center;
+}
+
+
+ul {
+  float: right;
+  margin-top: 30px;
+  margin-right: 60px;
+  font-size: 17px;
+}
+
+ul li{
+  display: inline-block;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 20px;
+  border: 1px solid transparent;
+  transition: 0.5 ease;
+}
+
+ul li a:hover{
+  background-color: #C1DBE8;
+  color: #43302E;
+}
+
+ul li.active a{
+  background-color: #F0E7D5;
+  color: #000;
+}
+
+.navBar {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title{
+  position: absolute;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.title h1{
+  color: #F0E7D5;
+  font-size: 70px;
+}
+
+.title h3{
+  color: #C1DBEB;
+}
+
+.main {
+  background-color: #F0E7D5;
+  padding: 40px;
+  min-height: 60vh;
+}
+
+.main h2{
+  color: #43302E;
+}
+
+.intro {
+  margin-top: 20px;
+}
+
+.intro-image {
+  float: right;
+  width: 260px;      
+  margin-left: 20px;   
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.graph {
+  background-color: #F0E7D5;
+  padding: 40px;
+  min-height: 60vh;
+}
+
+.graph1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.chartDescription1 {
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+
+.graph2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.chartDescription2 {
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.graph3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.chartDescription3 {
+    font-size: 19px;
+    line-height: 1.5;
+}
+
+.reflection {
+  background-color: #F0E7D5;
+  padding: 40px;
+  min-height: 60vh;
+}
+
+.para{
+  font-size: 19px;
+  line-height: 2;
+  padding: 40px;
 }
