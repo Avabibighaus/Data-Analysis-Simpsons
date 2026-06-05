@@ -1,0 +1,29 @@
+{
+  "name": "finalgroupproject",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "setup": "tsc -w -p tsconfig.json",
+    "start": "vite"
+  },
+  "dependencies": {
+    "csv-parse": "^6.1.0",
+    "node-fetch": "^3.2.10",
+    "typescript": "^5.4.5",
+    "vega": "^6.2.0",
+    "vega-embed": "^7.1.0",
+    "vega-lite": "^6.4.1",
+    "vite": "^7.2.2"
+  },
+  "author": "Nathan Kennedy",
+  "email": "nkennedy631@gmail.com",
+  "maintainers": [
+    "Ayaan Kazerouni"
+  ],
+  "maintainer email": "ayaank@calpoly.edu",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "@types/vega": "^0.0.30"
+  }
+}
