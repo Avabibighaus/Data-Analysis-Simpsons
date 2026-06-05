@@ -1,47 +1,49 @@
-# Simpsons Data Analysis Project
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Simpsons Analysis</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <div class="navBar">
+            <ul>
+                <li class="active"><a href = "index.html">Home</a></li>
+                <li><a href = "data.html">Data/Analysis</a></li>
+                <li><a href = "reflection.html">Reflection</a></li>
+            </ul>
+            </div>
+            <div class="title">
+                <h1>DATA/ANALYSIS</h1>
+            </div>
+        </header>
+        <div class="graph">
+            <div class="graph1">
+                <div id="chart1" class="chart"></div>
 
-## Overview
+                <p class="chartDescription1">
+                    This graph shows the number of views (in millions) for each episode in season 21. As we can see episode 10 holds the absolute max views for the graph shooting up to about 15. After that peak it sharply drops back down by episode 11. From episodes 11-23 the number of views stays fairly stable between 5 and 6.5 million views. There are minor fluctuations but no major increase or decrease after the initial spike. This analysis shows an overall trend of an early surge in popularity, then viewership levels out and remains consistent for the rest of the season showing a loyal viewer base.
+                </p>
+            </div>
+            
+            <script type="module" src="./script.ts"></script>
+            <br>
 
-This project was completed as a collaborative software development course project at California Polytechnic State University.
+            <div class="graph2">
+                <div id="chart2" class="chart"></div>
+                <p class="chartDescription2">This graph displays the number of spoken lines for each member of the Simpson family across every episode in Season 21. Each character is represented by a different color, allowing us to easily compare how much dialogue each character receives throughout the season. From the trends, we can see that Homer consistently has the most lines, reinforcing his role as the primary focus of the show. Maggie has the fewest lines, which is expected since she rarely speaks. Bart and Lisa often have similar line counts, although their involvement varies depending on the episode’s storyline. Overall, this graph highlights how dialogue is distributed within the family, emphasizing Homer’s central role and the shifting focus between Bart, Lisa, and Marge from episode to episode.
+                </p>
+            </div>
 
-Our team analyzed multiple public datasets related to *The Simpsons*, including character, episode, and ratings data. We synthesized information from these datasets to identify trends and patterns, then presented our findings through a website featuring interactive data visualizations.
-
-The goal of the project was to transform raw data into meaningful insights that could be easily explored and understood by users.
-
-## My Contributions
-
-* Synthesized and analyzed data from multiple public datasets
-* Designed and implemented data visualizations using Vega-Lite
-* Created graphs to communicate trends and insights effectively
-* Contributed to website development using HTML, CSS, and TypeScript
-* Collaborated with teammates using GitHub version control
-* Participated in testing, debugging, and project integration
-
-## Technologies Used
-
-* TypeScript
-* HTML
-* CSS
-* Vega-Lite
-* GitHub
-
-## Skills Demonstrated
-
-* Data Analysis
-* Data Visualization
-* Web Development
-* Team Collaboration
-* Version Control
-* Problem Solving
-* Software Testing
-
-## Topics Explored
-
-* Character trends and popularity
-* Episode statistics and patterns
-* Ratings analysis
-* Relationships between multiple datasets
-
-## Course Context
-
-Originally completed as a final project for a software development course at California Polytechnic State University, San Luis Obispo.
+            <br>
+            <div class="graph3">
+                <div id="chart3" class="chart"></div>
+                <p class="chartDescription3"> This graph shows IMDb episode ratings for season 21. IMDb ratings are rated out of 10. From the graph we can see that the ratings for most episodes fall between 6.5 and 7.2, which indicates generally positive reviews. The ratings don't appear to change dramatically from episode to episode. Through the data we can see a minimum around the middle of the season but discarding that point the data stays at a median rating of 6.85. This stipulates that episode ratings stay consistent through the season and the Simpsons series has an overall high rating.
+                </p>
+            </div>
+            
+        </div>
+    </body>
+</html>
